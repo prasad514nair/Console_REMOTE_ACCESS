@@ -1,0 +1,1512 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bblack" >
+    
+     <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_marginBottom="48dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:layout_marginTop="48dp" >
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view01Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/black" />
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view01Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view01Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view01Left"
+            android:background="@drawable/black" />
+
+	<TextView
+	    android:id="@+id/text01Name"
+	    android:layout_width="96dp"
+	    android:layout_height="32dp"
+	    android:layout_below="@id/view01Left"
+	    android:layout_marginTop="14dp"
+	    android:gravity="center"
+	    android:text="@string/ch01" />
+
+	<TextView
+		android:id="@+id/text01Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text01Name"
+		android:layout_alignLeft="@id/text01Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="01" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view02Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view01Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view01Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view02Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/view02Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/view02Left"
+            android:background="@drawable/black" />
+
+        <TextView
+            android:id="@+id/text02Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/view02Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text01Name"
+            android:gravity="center"
+            android:text="02" />
+	<TextView
+		android:id="@+id/text02Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text02Name"
+		android:layout_alignLeft="@id/text02Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="02" />
+        
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view03Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/view02Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@+id/view02Right"
+            android:background="@drawable/black" />
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view03Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/view03Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/view03Left"
+            android:background="@drawable/black" />
+
+        <TextView
+            android:id="@+id/text03Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/view03Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text02Name"
+            android:gravity="center"
+            android:text="03" />
+	<TextView
+		android:id="@+id/text03Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text03Name"
+		android:layout_alignLeft="@id/text03Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="03" />
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view04Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/view03Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@+id/view03Right"
+            android:background="@drawable/black" />
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view04Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/view04Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/view04Left"
+            android:background="@drawable/black" />
+
+        <TextView
+            android:id="@+id/text04Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/view04Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text03Name"
+            android:gravity="center"
+            android:text="04" />
+	<TextView
+		android:id="@+id/text04Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text04Name"
+		android:layout_alignLeft="@id/text04Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="04" />
+
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view05Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/view04Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@+id/view04Right"
+            android:background="@drawable/black" />
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view05Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/view05Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/view05Left"
+            android:background="@drawable/black" />
+
+        <TextView
+            android:id="@+id/text05Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/view05Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text04Name"
+            android:gravity="center"
+            android:text="05" />
+	<TextView
+		android:id="@+id/text05Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text05Name"
+		android:layout_alignLeft="@id/text05Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="05" />
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view06Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/view05Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@+id/view05Right"
+            android:background="@drawable/black" />
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view06Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/view06Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/view06Left"
+            android:background="@drawable/black" />
+
+        <TextView
+            android:id="@+id/text06Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/view06Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text05Name"
+            android:gravity="center"
+            android:text="06" />
+	<TextView
+		android:id="@+id/text06Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text06Name"
+		android:layout_alignLeft="@id/text06Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="06" />
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view07Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view06Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view06Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view07Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view07Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view07Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text07Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/view07Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text06Name"
+            android:gravity="center"
+            android:text="07" />
+	<TextView
+		android:id="@+id/text07Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text07Name"
+		android:layout_alignLeft="@id/text07Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="07" />
+        
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view08Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view07Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view07Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view08Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view08Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view08Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text08Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view08Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text07Name"
+            android:gravity="center"
+            android:text="08" />
+	<TextView
+		android:id="@+id/text08Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text08Name"
+		android:layout_alignLeft="@id/text08Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="08" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view09Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view08Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view08Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view09Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view09Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view09Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text09Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view09Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text08Name"
+            android:gravity="center"
+            android:text="09" />
+	<TextView
+		android:id="@+id/text09Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text09Name"
+		android:layout_alignLeft="@id/text09Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="09" />
+        
+   <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view10Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view09Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view09Right"
+            android:background="@drawable/black" />
+    <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view10Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view10Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view10Left"
+            android:background="@drawable/black" />
+      <TextView
+            android:id="@+id/text10Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view10Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text09Name"
+            android:gravity="center"
+            android:text="10" />
+	<TextView
+		android:id="@+id/text10Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text10Name"
+		android:layout_alignLeft="@id/text10Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="10" />
+      
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view11Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignLeft="@id/view01Left"
+            android:layout_below="@id/view01Left"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/black" />
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view11Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view11Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view11Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text11Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view11Left"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="11" />
+	<TextView
+		android:id="@+id/text11Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text11Name"
+		android:layout_alignLeft="@id/text11Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="11" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view12Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view11Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view11Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view12Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view12Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view12Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text12Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view12Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text11Name"
+            android:gravity="center"
+            android:text="12" />
+	<TextView
+		android:id="@+id/text12Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text12Name"
+		android:layout_alignLeft="@id/text12Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="12" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view13Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view12Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view12Right"
+            android:background="@drawable/black" />
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view13Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view13Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view13Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text13Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view13Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text12Name"
+            android:gravity="center"
+            android:text="13" />
+	<TextView
+		android:id="@+id/text13Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text13Name"
+		android:layout_alignLeft="@id/text13Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="13" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view14Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view13Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view13Right"
+            android:background="@drawable/black" />
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view14Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view14Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view14Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text14Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view14Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text13Name"
+            android:gravity="center"
+            android:text="14" />
+	<TextView
+		android:id="@+id/text14Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text14Name"
+		android:layout_alignLeft="@id/text14Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="14" />
+
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view15Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view14Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view14Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view15Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view15Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view15Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text15Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view15Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text14Name"
+            android:gravity="center"
+            android:text="15" />
+	<TextView
+		android:id="@+id/text15Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text15Name"
+		android:layout_alignLeft="@id/text15Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="15" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view16Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view15Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view15Right"
+            android:background="@drawable/black" />
+
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view16Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view16Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view16Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text16Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view16Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text15Name"
+            android:gravity="center"
+            android:text="16" />
+	<TextView
+		android:id="@+id/text16Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text16Name"
+		android:layout_alignLeft="@id/text16Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="16" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view17Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view16Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view16Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view17Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view17Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view17Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text17Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/view17Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text16Name"
+            android:gravity="center"
+            android:text="17" />
+	<TextView
+		android:id="@+id/text17Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text17Name"
+		android:layout_alignLeft="@id/text17Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="17" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view18Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view17Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view17Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view18Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view18Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view18Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text18Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view18Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text17Name"
+            android:gravity="center"
+            android:text="18" />
+	<TextView
+		android:id="@+id/text18Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text18Name"
+		android:layout_alignLeft="@id/text18Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="18" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view19Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view18Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view18Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view19Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view19Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view19Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text19Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view19Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text18Name"
+            android:gravity="center"
+            android:text="19" />
+	<TextView
+		android:id="@+id/text19Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text19Name"
+		android:layout_alignLeft="@id/text19Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="19" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view20Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view19Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view19Right"
+            android:background="@drawable/black" />
+    <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view20Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view20Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view20Left"
+            android:background="@drawable/black" />
+      <TextView
+            android:id="@+id/text20Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view20Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text19Name"
+            android:gravity="center"
+            android:text="20" />
+	<TextView
+		android:id="@+id/text20Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text20Name"
+		android:layout_alignLeft="@id/text20Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="20" />
+
+      <TextView
+          android:id="@+id/textServerName"
+          android:layout_width="320dp"
+          android:layout_height="48dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:maxLines="1"
+          android:text="server"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:textColor="@drawable/white"
+          android:textSize="32dp" />
+
+      
+    <com.cavsusa.ccastconsole.VolumeLevelView
+        android:id="@+id/view21Left"
+        android:layout_width="16dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@+id/view11Left"
+        android:layout_below="@id/view11Left"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/black" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view21Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view21Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view21Left"
+            android:background="@drawable/black" />
+
+	<TextView
+	    android:id="@+id/text21Name"
+	    android:layout_width="96dp"
+	    android:layout_height="32dp"
+	    android:layout_below="@id/view21Left"
+	    android:layout_marginTop="14dp"
+	    android:gravity="center"
+	    android:text="21" />
+
+	<TextView
+		android:id="@+id/text21Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text21Name"
+		android:layout_alignLeft="@id/text21Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="21" />
+        
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view22Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view21Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view21Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view22Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view22Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view22Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text22Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view22Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text21Name"
+            android:gravity="center"
+            android:text="22" />
+	<TextView
+		android:id="@+id/text22Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text22Name"
+		android:layout_alignLeft="@id/text22Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="22" />
+	
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view23Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view22Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view22Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view23Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view23Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view23Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text23Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view23Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text22Name"
+            android:gravity="center"
+            android:text="23" />
+	<TextView
+		android:id="@+id/text23Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text23Name"
+		android:layout_alignLeft="@id/text23Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="23" />
+	
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view24Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view23Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view23Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view24Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view24Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view24Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text24Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view24Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text23Name"
+            android:gravity="center"
+            android:text="24" />
+	<TextView
+		android:id="@+id/text24Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text24Name"
+		android:layout_alignLeft="@id/text24Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="24" />
+	
+		<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view25Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view24Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view24Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view25Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view25Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view25Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text25Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view25Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text24Name"
+            android:gravity="center"
+            android:text="25" />
+	<TextView
+		android:id="@+id/text25Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text25Name"
+		android:layout_alignLeft="@id/text25Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="25" />
+	
+	
+		<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view26Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view25Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view25Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view26Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view26Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view26Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text26Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view26Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text25Name"
+            android:gravity="center"
+            android:text="26" />
+	<TextView
+		android:id="@+id/text26Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text26Name"
+		android:layout_alignLeft="@id/text26Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="26" />
+	
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view27Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view26Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view26Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view27Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view27Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view27Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text27Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view27Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text26Name"
+            android:gravity="center"
+            android:text="27" />
+	<TextView
+		android:id="@+id/text27Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text27Name"
+		android:layout_alignLeft="@id/text27Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="27" />
+		
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view28Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view27Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view27Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view28Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view28Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view28Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text28Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view28Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text27Name"
+            android:gravity="center"
+            android:text="28" />
+	<TextView
+		android:id="@+id/text28Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text28Name"
+		android:layout_alignLeft="@id/text28Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="28" />
+		
+		<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view29Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view28Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view28Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view29Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view29Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view29Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text29Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view29Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text28Name"
+            android:gravity="center"
+            android:text="29" />
+        <TextView
+		android:id="@+id/text29Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text29Name"
+		android:layout_alignLeft="@id/text29Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="29" />
+		
+        	
+		<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view30Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view29Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view29Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view30Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view30Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view30Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text30Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view30Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text29Name"
+            android:gravity="center"
+            android:text="30" />
+	<TextView
+		android:id="@+id/text30Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text30Name"
+		android:layout_alignLeft="@id/text30Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="30" />
+	
+	
+	  <com.cavsusa.ccastconsole.VolumeLevelView
+        android:id="@+id/view31Left"
+        android:layout_width="16dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@+id/view21Left"
+        android:layout_below="@id/view21Left"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/black" />
+
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view31Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view31Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view31Left"
+            android:background="@drawable/black" />
+
+	<TextView
+	    android:id="@+id/text31Name"
+	    android:layout_width="96dp"
+	    android:layout_height="32dp"
+	    android:layout_below="@id/view31Left"
+	    android:layout_marginTop="14dp"
+	    android:gravity="center"
+	    android:text="21" />
+
+	<TextView
+		android:id="@+id/text31Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text31Name"
+		android:layout_alignLeft="@id/text31Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="31" />
+        
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view32Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view31Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view31Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view32Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view32Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view32Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text32Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view32Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text31Name"
+            android:gravity="center"
+            android:text="32" />
+	<TextView
+		android:id="@+id/text32Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text32Name"
+		android:layout_alignLeft="@id/text32Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="32" />
+	
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view33Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view32Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view32Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view33Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view33Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view33Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text33Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view33Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text32Name"
+            android:gravity="center"
+            android:text="33" />
+	<TextView
+		android:id="@+id/text33Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text33Name"
+		android:layout_alignLeft="@id/text33Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="33" />
+	
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view34Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view33Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view33Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view34Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view34Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view34Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text34Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view34Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text33Name"
+            android:gravity="center"
+            android:text="34" />
+	<TextView
+		android:id="@+id/text34Status"
+		android:layout_width="96dp"
+		android:layout_height="32dp"
+		android:layout_below="@id/text34Name"
+		android:layout_alignLeft="@id/text34Name"
+		android:layout_marginTop="14dp"
+		android:gravity="center"
+		android:text="34" />
+	
+	        
+	<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view35Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view34Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view34Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view35Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view35Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view35Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text35Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view35Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text34Name"
+            android:gravity="center"
+            android:text="35" />
+        
+        
+		<TextView
+			android:id="@+id/text35Status"
+			android:layout_width="96dp"
+			android:layout_height="32dp"
+			android:layout_below="@id/text35Name"
+			android:layout_alignLeft="@id/text35Name"
+			android:layout_marginTop="14dp"
+			android:gravity="center"
+			android:text="35" />
+		
+		<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view36Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view35Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view35Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view36Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view36Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view36Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text36Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view36Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text35Name"
+            android:gravity="center"
+            android:text="36" />
+		<TextView
+			android:id="@+id/text36Status"
+			android:layout_width="96dp"
+			android:layout_height="32dp"
+			android:layout_below="@id/text36Name"
+			android:layout_alignLeft="@id/text36Name"
+			android:layout_marginTop="14dp"
+			android:gravity="center"
+			android:text="36" />
+		<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view37Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view36Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view36Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view37Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view37Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view37Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text37Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view37Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text36Name"
+            android:gravity="center"
+            android:text="37" />
+		<TextView
+			android:id="@+id/text37Status"
+			android:layout_width="96dp"
+			android:layout_height="32dp"
+			android:layout_below="@id/text37Name"
+			android:layout_alignLeft="@id/text37Name"
+			android:layout_marginTop="14dp"
+			android:gravity="center"
+			android:text="37" />
+		
+		<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view38Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view37Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view37Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view38Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view38Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view38Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text38Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view38Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text37Name"
+            android:gravity="center"
+            android:text="38" />
+		<TextView
+			android:id="@+id/text38Status"
+			android:layout_width="96dp"
+			android:layout_height="32dp"
+			android:layout_below="@id/text38Name"
+			android:layout_alignLeft="@id/text38Name"
+			android:layout_marginTop="14dp"
+			android:gravity="center"
+			android:text="38" />
+		
+		<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view39Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view38Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view38Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view39Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view39Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view39Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text39Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view39Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text38Name"
+            android:gravity="center"
+            android:text="39" />
+		<TextView
+			android:id="@+id/text39Status"
+			android:layout_width="96dp"
+			android:layout_height="32dp"
+			android:layout_below="@id/text39Name"
+			android:layout_alignLeft="@id/text39Name"
+			android:layout_marginTop="14dp"
+			android:gravity="center"
+			android:text="39" />
+		
+		<com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view40Left"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view39Right"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/view39Right"
+            android:background="@drawable/black" />
+        <com.cavsusa.ccastconsole.VolumeLevelView
+            android:id="@+id/view40Right"
+            android:layout_width="16dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/view40Left"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/view40Left"
+            android:background="@drawable/black" />
+        <TextView
+            android:id="@+id/text40Name"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/view40Left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/text39Name"
+            android:gravity="center"
+            android:text="40" />
+		<TextView
+			android:id="@+id/text40Status"
+			android:layout_width="96dp"
+			android:layout_height="32dp"
+			android:layout_below="@id/text40Name"
+			android:layout_alignLeft="@id/text40Name"
+			android:layout_marginTop="14dp"
+			android:gravity="center"
+			android:text="40" />
+		
+		
+		
+		
+		<TextView
+          android:id="@+id/textWlanStatus"
+          android:layout_width="480dp"
+          android:layout_height="40dp"
+          android:layout_gravity="bottom"
+          android:maxLines="1"
+          android:text="status"
+           android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:textColor="@drawable/lightgray"
+          android:textSize="24dp" />
+	
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
+<!-- From: file:/C:/Cinet/AS_Projects/console/app/src/main/res/layout/monitoring.xml -->

@@ -1,0 +1,669 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bblack" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:text="Server Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@drawable/white" />
+
+        <EditText
+            android:id="@+id/editServerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editServerName"
+            android:layout_marginTop="32dp"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editServerName"
+            android:layout_alignTop="@+id/textStatus"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/EditChannel02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditChannel01"
+            android:layout_below="@+id/EditChannel01"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel02"
+            android:layout_alignBottom="@+id/EditChannel02"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditChannel02"
+            android:layout_below="@+id/EditChannel02"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel03"
+            android:layout_alignBottom="@+id/EditChannel03"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditChannel03"
+            android:layout_below="@+id/EditChannel03"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel04"
+            android:layout_alignBottom="@+id/EditChannel04"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="4"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditChannel04"
+            android:layout_below="@+id/EditChannel04"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel05"
+            android:layout_alignBottom="@+id/EditChannel05"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditChannel05"
+            android:layout_below="@+id/EditChannel05"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel06"
+            android:layout_alignBottom="@+id/EditChannel06"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="6"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditChannel06"
+            android:layout_below="@+id/EditChannel06"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel07"
+            android:layout_alignBottom="@+id/EditChannel07"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="7"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditChannel07"
+            android:layout_below="@+id/EditChannel07"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel08"
+            android:layout_alignBottom="@+id/EditChannel08"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="8"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditChannel08"
+            android:layout_below="@+id/EditChannel08"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel09"
+            android:layout_alignBottom="@+id/EditChannel09"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="9"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditChannel09"
+            android:layout_below="@+id/EditChannel09"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel10"
+            android:layout_alignBottom="@+id/EditChannel10"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="10"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView11"
+            android:layout_alignBottom="@+id/TextView11"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView11"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel01"
+            android:layout_alignBottom="@+id/EditChannel01"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel01"
+            android:text="11"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView12"
+            android:layout_alignBottom="@+id/TextView12"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView12"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel02"
+            android:layout_alignBottom="@+id/EditChannel02"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel02"
+            android:text="12"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView13"
+            android:layout_alignBottom="@+id/TextView13"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView13"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel03"
+            android:layout_alignBottom="@+id/EditChannel03"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel03"
+            android:text="13"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView14"
+            android:layout_alignBottom="@+id/TextView14"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView14"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel04"
+            android:layout_alignBottom="@+id/EditChannel04"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel04"
+            android:text="14"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView15"
+            android:layout_alignBottom="@+id/TextView15"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView15"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel05"
+            android:layout_alignBottom="@+id/EditChannel05"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel05"
+            android:text="15"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView16"
+            android:layout_alignBottom="@+id/TextView16"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView16"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel06"
+            android:layout_alignBottom="@+id/EditChannel06"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel06"
+            android:text="16"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView17"
+            android:layout_alignBottom="@+id/TextView17"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView17"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel07"
+            android:layout_alignBottom="@+id/EditChannel07"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel07"
+            android:text="17"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView18"
+            android:layout_alignBottom="@+id/TextView18"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView18"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel08"
+            android:layout_alignBottom="@+id/EditChannel08"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel08"
+            android:text="18"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView19"
+            android:layout_alignBottom="@+id/TextView19"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView19"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel09"
+            android:layout_alignBottom="@+id/EditChannel09"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel09"
+            android:text="19"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView20"
+            android:layout_alignBottom="@+id/TextView20"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView20"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel10"
+            android:layout_alignBottom="@+id/EditChannel10"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel10"
+            android:text="20"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditChannel21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView11"
+            android:layout_alignBottom="@+id/TextView11"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView21"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel01"
+            android:layout_alignBottom="@+id/EditChannel01"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel11"
+            android:text="21"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+        <EditText
+            android:id="@+id/EditChannel31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView11"
+            android:layout_alignBottom="@+id/TextView11"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView31"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditChannel01"
+            android:layout_alignBottom="@+id/EditChannel01"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditChannel21"
+            android:text="31"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+        </RelativeLayout>
+
+</FrameLayout>

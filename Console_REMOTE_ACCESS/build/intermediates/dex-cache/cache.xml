@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Cinet\AS_Projects\console\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="C:\Cinet\AS_Projects\console\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-39634cd6ef74522bde01850820eb70645b47a91c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Prasad\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="C:\Cinet\AS_Projects\console\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-9e41fd39949756100df7d44e75ee0cb552912b46.jar" />
+    </item>
+    <item
+        jar="C:\Cinet\AS_Projects\console\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="C:\Cinet\AS_Projects\console\app\build\intermediates\pre-dexed\debug\classes-b4aba2326fb950b7c8b5e879e0a2c9795d8e95e0.jar" />
+    </item>
+
+</items>

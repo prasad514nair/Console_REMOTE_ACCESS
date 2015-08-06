@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CiNet.com</string>
+    <string name="title_direct_tv">Direct TV</string>
+    <string name="title_section3">Settings</string>
+    <string name="title_section2">System</string>
+    <string name="title_section1">Monitor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="button_chname">Edit Channel Name</string>
+    <string name="assing_channel">Set Input Source</string>
+    <string name="button_volume">Set Input Volume</string>
+    <string name="server_name">Server Name</string>
+    <string name="reboot">Reboot</string>
+    <string name="ch01">01</string>
+    <string name="ip_address_hint">Must be something like 192.168.0.100</string>
+    <string name="audioModeStereo">Stereo</string>
+    <string name="audioModeMono">MONO</string>
+    <string name="title_activity_edit_channels">EditChannels</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

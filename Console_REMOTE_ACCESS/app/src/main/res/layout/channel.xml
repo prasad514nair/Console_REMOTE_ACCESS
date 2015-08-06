@@ -1,0 +1,49 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="128dp"
+        android:layout_height="128dp" >
+
+        <View
+            android:id="@+id/viewLeft"
+            android:layout_width="16dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/black" />
+
+        <View
+            android:id="@+id/viewRight"
+            android:layout_width="16dp"
+            android:layout_height="56dp"
+            android:layout_alignTop="@+id/viewLeft"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/viewLeft"
+            android:background="@drawable/black" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="96dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/viewLeft"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="TextView"
+             />
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="96dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/textName"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="TextView" />
+
+    </RelativeLayout>

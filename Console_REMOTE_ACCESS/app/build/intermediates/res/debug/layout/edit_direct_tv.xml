@@ -1,0 +1,1226 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+          
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:background="@drawable/bblack" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:text="Input the IP-addresses of Direct TV boxes"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@drawable/white" />
+
+<!--          <EditText
+            android:id="@+id/editServerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/textView1"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" /> -->
+
+        <TextView
+            android:id="@+id/textStatusIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="32dp"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_alignTop="@+id/textStatusIp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/EditIp02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp01"
+            android:layout_below="@+id/EditIp01"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp02"
+            android:layout_alignBottom="@+id/EditIp02"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp02"
+            android:layout_below="@+id/EditIp02"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp03"
+            android:layout_alignBottom="@+id/EditIp03"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp03"
+            android:layout_below="@+id/EditIp03"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp04"
+            android:layout_alignBottom="@+id/EditIp04"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="4"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp04"
+            android:layout_below="@+id/EditIp04"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp05"
+            android:layout_alignBottom="@+id/EditIp05"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp05"
+            android:layout_below="@+id/EditIp05"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp06"
+            android:layout_alignBottom="@+id/EditIp06"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="6"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp06"
+            android:layout_below="@+id/EditIp06"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp07"
+            android:layout_alignBottom="@+id/EditIp07"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="7"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp07"
+            android:layout_below="@+id/EditIp07"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp08"
+            android:layout_alignBottom="@+id/EditIp08"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="8"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp08"
+            android:layout_below="@+id/EditIp08"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp09"
+            android:layout_alignBottom="@+id/EditIp09"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="9"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp09"
+            android:layout_below="@+id/EditIp09"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp10"
+            android:layout_alignBottom="@+id/EditIp10"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="10"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp11"
+            android:layout_alignBottom="@+id/TextViewIp11"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp11"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp01"
+            android:layout_alignBottom="@+id/EditIp01"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp01"
+            android:text="11"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp12"
+            android:layout_alignBottom="@+id/TextViewIp12"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp12"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp02"
+            android:layout_alignBottom="@+id/EditIp02"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp02"
+            android:text="12"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp13"
+            android:layout_alignBottom="@+id/TextViewIp13"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp13"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp03"
+            android:layout_alignBottom="@+id/EditIp03"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp03"
+            android:text="13"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp14"
+            android:layout_alignBottom="@+id/TextViewIp14"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp14"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp04"
+            android:layout_alignBottom="@+id/EditIp04"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp04"
+            android:text="14"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp15"
+            android:layout_alignBottom="@+id/TextViewIp15"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp15"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp05"
+            android:layout_alignBottom="@+id/EditIp05"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp05"
+            android:text="15"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp16"
+            android:layout_alignBottom="@+id/TextViewIp16"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp16"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp06"
+            android:layout_alignBottom="@+id/EditIp06"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp06"
+            android:text="16"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp17"
+            android:layout_alignBottom="@+id/TextViewIp17"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp17"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp07"
+            android:layout_alignBottom="@+id/EditIp07"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp07"
+            android:text="17"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp18"
+            android:layout_alignBottom="@+id/TextViewIp18"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp18"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp08"
+            android:layout_alignBottom="@+id/EditIp08"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp08"
+            android:text="18"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp19"
+            android:layout_alignBottom="@+id/TextViewIp19"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp19"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp09"
+            android:layout_alignBottom="@+id/EditIp09"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp09"
+            android:text="19"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditIp20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp20"
+            android:layout_alignBottom="@+id/TextViewIp20"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp20"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp10"
+            android:layout_alignBottom="@+id/EditIp10"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp10"
+            android:text="20"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        
+         <EditText
+            android:id="@+id/EditIp21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp10"
+            android:layout_below="@+id/EditIp10"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp21"
+            android:layout_alignBottom="@+id/EditIp21"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="21"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+        <EditText
+            android:id="@+id/EditIp22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp21"
+            android:layout_below="@+id/EditIp21"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp22"
+            android:layout_alignBottom="@+id/EditIp22"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="22"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+        <EditText
+            android:id="@+id/EditIp23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp22"
+            android:layout_below="@+id/EditIp22"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp23"
+            android:layout_alignBottom="@+id/EditIp23"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="23"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+        <EditText
+            android:id="@+id/EditIp24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp23"
+            android:layout_below="@+id/EditIp23"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp24"
+            android:layout_alignBottom="@+id/EditIp24"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="24"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+        <EditText
+            android:id="@+id/EditIp25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp24"
+            android:layout_below="@+id/EditIp24"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp25"
+            android:layout_alignBottom="@+id/EditIp25"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="25"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+         <EditText
+            android:id="@+id/EditIp26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp25"
+            android:layout_below="@+id/EditIp25"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp26"
+            android:layout_alignBottom="@+id/EditIp26"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="26"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp26"
+            android:layout_below="@+id/EditIp26"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp27"
+            android:layout_alignBottom="@+id/EditIp27"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="27"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp27"
+            android:layout_below="@+id/EditIp27"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp28"
+            android:layout_alignBottom="@+id/EditIp28"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="28"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp28"
+            android:layout_below="@+id/EditIp28"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp29"
+            android:layout_alignBottom="@+id/EditIp29"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="29"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditIp29"
+            android:layout_below="@+id/EditIp29"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextViewIp30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp30"
+            android:layout_alignBottom="@+id/EditIp30"
+            android:layout_toLeftOf="@+id/editServerName"
+            android:text="30"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+          <EditText
+            android:id="@+id/EditIp31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp31"
+            android:layout_alignBottom="@+id/TextViewIp31"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp31"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp21"
+            android:layout_alignBottom="@+id/EditIp21"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp21"
+            android:text="31"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp32"
+            android:layout_alignBottom="@+id/TextViewIp32"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp32"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp22"
+            android:layout_alignBottom="@+id/EditIp22"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp21"
+            android:text="32"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp33"
+            android:layout_alignBottom="@+id/TextViewIp33"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp33"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp23"
+            android:layout_alignBottom="@+id/EditIp23"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp23"
+            android:text="33"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp34"
+            android:layout_alignBottom="@+id/TextViewIp34"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp34"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp24"
+            android:layout_alignBottom="@+id/EditIp24"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp24"
+            android:text="34"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp35"
+            android:layout_alignBottom="@+id/TextViewIp35"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp35"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp25"
+            android:layout_alignBottom="@+id/EditIp25"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp21"
+            android:text="35"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp36"
+            android:layout_alignBottom="@+id/TextViewIp36"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp36"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp26"
+            android:layout_alignBottom="@+id/EditIp26"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp26"
+            android:text="36"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp37"
+            android:layout_alignBottom="@+id/TextViewIp37"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp37"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp27"
+            android:layout_alignBottom="@+id/EditIp27"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp27"
+            android:text="37"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp38"
+            android:layout_alignBottom="@+id/TextViewIp38"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp38"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp28"
+            android:layout_alignBottom="@+id/EditIp28"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp28"
+            android:text="38"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp39"
+            android:layout_alignBottom="@+id/TextViewIp39"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp39"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp29"
+            android:layout_alignBottom="@+id/EditIp29"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp29"
+            android:text="39"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <EditText
+            android:id="@+id/EditIp40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp40"
+            android:layout_alignBottom="@+id/TextViewIp40"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextViewIp40"
+            android:background="@drawable/blue"
+            android:ems="10"
+            android:height="32dp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColor="@drawable/white"
+            android:textSize="24sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewIp40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditIp30"
+            android:layout_alignBottom="@+id/EditIp30"
+            android:layout_marginLeft="74dp"
+            android:layout_toRightOf="@+id/EditIp30"
+            android:text="40"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+         <Button
+            android:id="@+id/buttonApplyIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         	android:layout_alignBaseline="@+id/TextViewIp11"
+            android:layout_alignBottom="@+id/TextViewIp11"
+            android:layout_toRightOf="@+id/EditIp11"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="520dp"
+            android:layout_marginRight="32dp"
+            android:minWidth="120dp"
+            android:text="Apply" />
+
+        <Button
+            android:id="@+id/buttonReboot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextViewIp12"
+            android:layout_alignBottom="@+id/TextViewIp12"
+            android:layout_toRightOf="@+id/EditIp12"
+            android:layout_marginBottom="470dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="32dp"
+            android:minWidth="120dp"
+            android:text="REBOOT" />
+
+        <Button
+            android:id="@+id/buttonPoweroff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          	android:layout_alignBaseline="@+id/TextViewIp13"
+            android:layout_alignBottom="@+id/TextViewIp13"
+            android:layout_toRightOf="@+id/EditIp13"
+            android:layout_marginBottom="420dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="100dp"
+            android:clickable="false"
+            android:minWidth="120dp"
+            android:text="PowerOff" />
+        
+        
+        </RelativeLayout>
+    
+        </ScrollView>
+
+
+ </FrameLayout><!-- From: file:/C:/Cinet/AS_Projects/console/app/src/main/res/layout/edit_direct_tv.xml -->

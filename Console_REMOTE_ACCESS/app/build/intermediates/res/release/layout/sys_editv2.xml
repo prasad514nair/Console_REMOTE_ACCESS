@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/buttonChannelName"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="206dp"
+            android:layout_marginTop="159dp"
+            android:text="@string/button_chname" />
+
+        <Button
+            android:id="@+id/buttonAssign"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonChannelName"
+            android:layout_below="@+id/buttonChannelName"
+            android:layout_marginTop="58dp"
+            android:text="@string/assing_channel" />
+
+        <Button
+            android:id="@+id/buttonVolume"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonAssign"
+            android:layout_below="@+id/buttonAssign"
+            android:layout_marginTop="56dp"
+            android:text="@string/button_volume" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="39dp"
+            android:text="@string/server_name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewServerName"
+            android:layout_width="480dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignLeft="@+id/buttonChannelName"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/buttonReboot"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textViewServerName"
+            android:layout_alignTop="@+id/buttonChannelName"
+            android:layout_marginRight="110dp"
+            android:text="@string/reboot" />
+
+    </RelativeLayout>
+
+</FrameLayout><!-- From: file:/C:/Cinet/AS_Projects/console/app/src/main/res/layout/sys_editv2.xml -->

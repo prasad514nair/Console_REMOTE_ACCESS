@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_height="fill_parent" 
+					android:gravity="left|center"
+					android:layout_width="fill_parent" 
+					android:paddingBottom="5px"
+					android:paddingTop="5px" 
+					android:paddingLeft="5px">
+					
+<TextView 
+    	android:id="@+id/DirectTvChannelNumber" 
+    	android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:gravity="center"
+		android:background="@drawable/border" 
+		android:textColor="#FFFF00"
+		android:text="hi">
+    
+</TextView>
+
+<TextView 
+    	android:text="@+id/DirectTvChannelName" 
+    	android:id="@+id/DirectTvChannelName"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10px" 
+		android:textColor="#0099CC">
+</TextView>
+
+</LinearLayout>
+<!-- From: file:/C:/Cinet/AS_Projects/console/app/src/main/res/layout/direct_tv_channels_row.xml -->
